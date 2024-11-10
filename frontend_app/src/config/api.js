@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://bc83-2402-8100-27f9-bfef-3bad-ff1d-485c-3b32.ngrok-free.app'
+const BACKEND_URL = 'http://localhost:3001'
 
 const AUTH_URL = '/api/auth'
 const IMAGE_URL = '/api/image'

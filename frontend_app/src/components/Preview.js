@@ -51,7 +51,7 @@ export const Preview = (props) => {
             if (faces && faces.length > 0) {
                 let options = {
                     lineWidth: 4,
-                    boxColor: (faces.length === 1 && faces[0].detection.score > 0.75) ? '#00ff00' : '#f00000',
+                    boxColor: (faces.length === 1 && faces[0].detection.score > 0.55) ? '#00ff00' : '#f00000',
                     drawLabelOptions: {fontColor: '#1e40af'}
                 }
                 faces.map(face => {

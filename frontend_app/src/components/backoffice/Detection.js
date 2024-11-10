@@ -86,7 +86,7 @@ export const Detection = () => {
             elCanvasContainer.classList = 'canvas-container'
             const score = Math.round(faces[i].score * 1000) / 1000
             const elScore = document.createElement('p')
-            elScore.classList = 'badge ' + (score >= 0.75 ? 'badge-success' : (score <= 0.5 ? 'badge-danger' : 'badge-warning'))
+            elScore.classList = 'badge ' + (score >= 0.55 ? 'badge-success' : (score <= 0.5 ? 'badge-danger' : 'badge-warning'))
             elScore.innerText = 'Score: ' + score
             elCanvasContainer.appendChild(face)
             elCanvasContainer.appendChild(elScore)

@@ -20,21 +20,21 @@ export const Dashboard = ({ contract, account, provider }) => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        // console.log({
-        //   districtName,
-        //   policeStation,
-        //   complaintType,
-        //   incidentDetails,
-        //   fName,
-        //   mName,
-        //   lName,
-        //   address,
-        //   city,
-        //   state,
-        //   zip,
-        //   contact,
-        //   email
-        // })
+        console.log({
+          districtName,
+          policeStation,
+          complaintType,
+          incidentDetails,
+          fName,
+          mName,
+          lName,
+          address,
+          city,
+          state,
+          zip,
+          contact,
+          email
+        })
         contract.setData(policeStation, complaintType, incidentDetails, fName + mName + lName, address, city + state + zip, contact, email)
         return;
     }

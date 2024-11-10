@@ -66,7 +66,7 @@ export const Login = ({enableInput}) => {
                     id="login-email"
                     className="my-input input100"
                     placeholder="Email"
-                    disabled={isFirefox ? false : true}
+                    // disabled={isFirefox ? false : true}
                     value={email || ''}
                     onChange={(e) => dispatch(setLoginEmail(e.target.value))}
                 />
@@ -79,7 +79,7 @@ export const Login = ({enableInput}) => {
                     id="login-password"
                     className="my-input input100"
                     placeholder="Password"
-                    disabled={isFirefox ? false : true}
+                    // disabled={isFirefox ? false : true}
                     value={password || ''}
                     onChange={(e) => dispatch(setLoginPassword(e.target.value))}
                 />

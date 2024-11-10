@@ -6,7 +6,7 @@ import { AuthContainer } from './containers/AuthContainer'
 import { PrivateContainer } from './containers/PrivateContainer'
 import { Loader } from './components/Loader'
 import { Dashboard } from './components/backoffice/Dashboard'
-import Fir from './artifacts/contracts/Fir.sol/Fir.json'
+import Fir from './contracts/Fir.json'
 const ethers = require("ethers")
 
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
 				const signer = provider.getSigner();
 				const address = await signer.getAddress();
 				setAccount(address);
-				let contractAddress = "0xD022b05633cdb571d12fF4d236EC2A8e6a7DA89B";
+				let contractAddress = "0x3d0bD90604D640F94a430e7eCf486EB03C1fcDBD";
 				const contract = new ethers.Contract(contractAddress, Fir.abi, signer);
 				// console.log(contract)
 				setContract(contract);

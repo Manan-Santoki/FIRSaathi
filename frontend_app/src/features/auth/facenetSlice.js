@@ -63,8 +63,8 @@ export const facenetSlice = createSlice({
             let msg = null
             if (action.payload.length === 0) {
                 msg = ['The face could not be identified. Insert an IMAGE where the face is clear.']
-            } else if (action.payload.length === 1 && action.payload[0].detection.score <= 0.75) {
-                msg = ['You got a score of '+(Math.round(action.payload[0].detection.score * 100) / 100)+' which is below the minimum threshold of 0.75. Insert an IMAGE where the face is more visible.']
+            } else if (action.payload.length === 1 && action.payload[0].detection.score <= 0.55) {
+                msg = ['You got a score of '+(Math.round(action.payload[0].detection.score * 100) / 100)+' which is below the minimum threshold of 0.55. Insert an IMAGE where the face is more visible.']
             } else if (action.payload.length > 1) {
                 msg = ['More than one face has been detected. Insert an IMAGE where there is only you.']
             }
